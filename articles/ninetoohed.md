@@ -1,10 +1,11 @@
-# 深度解析：如何提升AI模型训练效率？
+NineToothed 是一个轻量级 AI 编译器工具链，支持跨平台部署。
 
-我们来看看现代AI训练中的关键挑战和优化方法：
+## IR 设计
+基于 MLIR 构建中间表示，实现语言与硬件解耦。
+MLIR 提供了模块化设计，使得 IR 可以灵活扩展。
 
-## 1. 数据并行
-将数据分片分布到多个GPU上。
-
-## 2. 模型并行
-将不同层分布到不同的设备上。
-
+```rust
+fn build_ir() -> Module {
+    let module = Module::new();
+    module.add_func("main", vec![Arg::new("input", TensorType::F32)];
+}
